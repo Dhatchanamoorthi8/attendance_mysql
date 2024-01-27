@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+.container-main{
+ overflow: hidden;
+ background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+ font-family: 'Poppins', sans-serif;
+ opacity: 0.8 !important;
+}
+.login-head {
+ height: 100vh;
+
+
+}
+.form{
+ color: #fff;
+ background: linear-gradient(rgba(255, 255, 255, 0.7));
+}
+.form>h2{
+ text-align: center;
+ padding-bottom: 5px;
+ font-size:25px;
+ font-weight: bold;
+}
+.username{
+  position: relative;
+}
+
+.label-username {
+  position: absolute;
+  left: 1ch;
+  top: 0.5em;
+  transition: 0.5s;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.input-username {
+  padding: 10px;
+  height: 38.5px;
+  width: 100%;
+  border-radius:5px;
+  color: #000;
+}
+.input-username:focus{
+  outline: 1px solid rgb(0, 0, 0);
+}
+.username:hover .label-username,
+.input-username:focus + .label-username,
+.input-username:not(:placeholder-shown) + .label-username {
+  top: -1.5em;
+  font-size: 0.9em;
+  left: 0ch;
+  transition: 0.2s;
+  color: #000;
+}
+
+.input-container {
+  position: relative;
+}
+
+.label-passowrd {
+  position: absolute;
+  left: 1ch;
+  top: 0.5em;
+  transition: 0.5s;
+  z-index: 1;
+  font-size: 14px;
+}
+
+#input-pass {
+  padding: 10px;
+  height: 38.5px;
+  width: 100%;
+  border-radius:5px;
+  color: #000;
+}
+#input-pass:focus{
+  outline: 1px solid rgb(0, 0, 0);
+}
+.input-container:hover .label-passowrd,
+#input-pass:focus + .label-passowrd,
+#input-pass:not(:placeholder-shown) + .label-passowrd {
+  top: -1.5em;
+  font-size: 0.9em;
+  left: 0ch;
+  transition: 0.2s;
+  color: #000;
+}
+
+.input-password{
+ position: relative;
+}
+.showpass-btn{
+ position: absolute;
+ top: 8px;
+ right: 10px;
+}
+.showpass{
+ background-color: transparent;
+ color: #000 !important;
+ border: none;
+}
+.login-side-img{
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+}
+[data-aos] {
+ opacity: 0; 
+}
+@media (max-width: 575.98px) {
+  .login-side-img{
+    display: none;
+  }
+  .img-div{
+    display: none;
+  }
+
+ }
+ .loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #FF3D00 #FF3D00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.forget-password{
+  right: 10px;
+}

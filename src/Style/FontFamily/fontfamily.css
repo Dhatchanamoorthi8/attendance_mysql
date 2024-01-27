@@ -1,0 +1,6 @@
+@font-face {
+ font-family: 'BungeeSpiceRegular'; /* You can use any name you prefer */
+ src: local('BungeeSpiceRegular'), url('../FontFamily/BungeeSpice-Regular.ttf') format('ttf');
+ /* Add other font file formats (woff, ttf, etc.) as needed */
+}
+

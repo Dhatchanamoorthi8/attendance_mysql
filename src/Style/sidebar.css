@@ -1,0 +1,142 @@
+.containers {
+  display: flex;
+}
+
+.collapse {
+  visibility: visible !important;
+}
+
+main {
+  flex: 1;
+  height: auto;
+  overflow-y: auto;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.sidebar {
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  transition: all 0.5s;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.user-name {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.logout-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.logo {
+  max-width: auto;
+  max-height: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  padding: 8px 10px;
+  gap: 20px;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  background-color: rgba(78, 78, 78, 0.9);
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.active {
+  background-color: #42a5f5;
+  color: #000;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.link_text {
+  font-size: 17px;
+}
+.my-title-className{
+  font-family: 'Poppins', sans-serif;
+  color: #000000aa;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.logout-action {
+  margin: 0% !important;
+  position: relative;
+}
+
+.order-5 {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  order: 5;
+  color: rgb(255, 255, 255) !important;
+  background-color: green !important;
+  width: 20%;
+
+}
+
+.order-6 {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  order: 6;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 0, 0) !important;
+  width: 20%;
+}
+
+.custom-tooltip {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.drop-down-nav {
+  border-bottom: 1px solid gray !important;
+  z-index: -1 !important;
+}
+
+@media (max-width: 575.98px) {
+  .sidebar {
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    width: 200px;
+  }
+}
+
+#changepassword {
+  font-family: 'Poppins', sans-serif;
+}

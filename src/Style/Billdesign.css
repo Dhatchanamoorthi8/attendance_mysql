@@ -1,0 +1,28 @@
+.company-name {
+ font: 16px/1.5,!important;
+ font-family: BungeeSpiceRegular !important;
+ color: #181717;
+ font-smoothing: antialized;
+ background: rgb(35, 219, 164);
+ background: linear-gradient(81deg, rgba(35, 219, 164, 1) 0%, rgba(68, 68, 68, 1) 62%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ width: 100%;
+ font-size: 140px;
+ text-align: center;
+}
+
+.top-details {
+ font-size: 20px;
+ font-family: monospace;
+}
+.bill-logo{
+  border-radius: 50%;
+  max-width: auto;
+  max-height: auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid gray;
+  z-index: 9;
+  padding: 2px;
+}
